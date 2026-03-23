@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Narnepati Krishna Chaitanya | Microbial Electrosynthesis · IIT Hyderabad</title>
+  <meta name="description" content="Post-Doctoral Researcher at IIT Hyderabad specializing in microbial electrosynthesis, CO₂ conversion, acetate, and medium chain fatty acid production."/>
+  <meta name="author" content="Narnepati Krishna Chaitanya"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Narnepati Krishna Chaitanya",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Post-Doctoral Researcher",
+    "affiliation": { "@type": "Organization", "name": "Indian Institute of Technology Hyderabad" },
+    "email": "nkchaitanya1994@gmail.com",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=6HndMUUAAAAJ",
+      "https://orcid.org/0000-0001-5916-9327",
+      "https://www.researchgate.net/profile/Narnepati-Krishna-Chaitanya",
+      "https://www.linkedin.com/in/dr-narnepati-krishna-chaitanya-1b4221203"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --ivory:     #f5f0e8;
+      --cream:     #ede8dc;
+      --warm-bg:   #faf7f2;
+      --ink:       #1a1612;
+      --ink2:      #2e2820;
+      --ink3:      #4a4238;
+      --muted:     #8c7d6e;
+      --muted2:    #b0a396;
+      --forest:    #1e4035;
+      --teal:      #2a6b57;
+      --teal-mid:  #3d9b7e;
+      --teal-lt:   #6bbfa4;
+      --teal-pale: rgba(61,155,126,0.10);
+      --teal-glow: rgba(61,155,126,0.20);
+      --amber:     #b85c1a;
+      --amber-lt:  #e88048;
+      --border:    rgba(26,22,18,0.10);
+      --border2:   rgba(26,22,18,0.18);
+      --card:      #ffffff;
+      --card2:     rgba(255,255,255,0.7);
+      --radius:    16px;
+      --r-sm:      10px;
+      --shadow:    0 2px 24px rgba(26,22,18,0.08);
+      --shadow2:   0 8px 48px rgba(26,22,18,0.13);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--warm-bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── Scroll Progress ── */
+    #scroll-bar {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0;
+      background: linear-gradient(90deg, var(--teal), var(--teal-mid), var(--amber));
+      z-index: 999;
+      transition: width 0.1s linear;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      transition: background 0.4s, box-shadow 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(250,247,242,0.95);
+      backdrop-filter: blur(16px) saturate(1.8);
+      box-shadow: 0 1px 0 var(--border);
+    }
+    .nav-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px; padding: 0 32px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; font-weight: 500;
+      color: var(--forest); text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .nav-logo span { font-style: italic; color: var(--teal); }
+    .nav-links { display: flex; gap: 36px; list-style: none; align-items: center; }
+    .nav-links a {
+      color: var(--ink3); text-decoration: none;
+      font-size: 0.8rem; font-weight: 400; letter-spacing: 0.06em;
+      text-transform: uppercase;
+      position: relative; padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 1.5px;
+      background: var(--teal-mid);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      padding: 9px 20px;
+      border: 1.5px solid var(--teal);
+      border-radius: 8px;
+      color: var(--teal) !important;
+      background: transparent;
+      transition: all 0.2s !important;
+      font-weight: 500 !important;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: var(--forest) !important; color: var(--ivory) !important; border-color: var(--forest) !important; }
+
+    /* mobile */
+    .nav-toggle {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: all 0.3s; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+    .mobile-nav {
+      display: none; position: fixed; inset: 0;
+      background: var(--warm-bg); z-index: 190;
+      flex-direction: column; align-items: center; justify-content: center; gap: 36px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem; font-weight: 400;
+      color: var(--ink); text-decoration: none; transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--teal); }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 96px 0; }
+
+    /* ── SECTION HEADERS ── */
+    .section-tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--teal); background: var(--teal-pale);
+      border: 1px solid rgba(61,155,126,0.25);
+      border-radius: 4px; padding: 4px 10px;
+      margin-bottom: 18px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 400; line-height: 1.2;
+      color: var(--ink); margin-bottom: 12px;
+    }
+    .section-title em { font-style: italic; color: var(--teal); }
+    .section-rule {
+      width: 48px; height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-lt));
+      border-radius: 2px; margin-bottom: 24px;
+    }
+    .section-desc {
+      font-size: 1rem; color: var(--muted);
+      max-width: 640px; line-height: 1.85; margin-bottom: 56px;
+      font-weight: 300;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 400px;
+      align-items: center; gap: 80px;
+      padding: 120px 0 80px;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 55%; height: 100%;
+      background: linear-gradient(160deg, #e8f5f0 0%, var(--cream) 60%, var(--warm-bg) 100%);
+      z-index: 0;
+      clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+      opacity: 0; animation: slideUp 0.8s 0.1s ease forwards;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block;
+      width: 28px; height: 1px; background: var(--teal);
+    }
+    .hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 5.5vw, 4.8rem);
+      font-weight: 400; line-height: 1.08;
+      color: var(--ink); margin-bottom: 6px;
+      opacity: 0; animation: slideUp 0.9s 0.3s ease forwards;
+    }
+    .hero-name em { color: var(--teal); }
+    .hero-subtitle {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.76rem; color: var(--muted);
+      letter-spacing: 0.1em; margin-bottom: 28px;
+      opacity: 0; animation: slideUp 0.9s 0.45s ease forwards;
+    }
+    .hero-bio {
+      font-size: 1.05rem; color: var(--ink3);
+      max-width: 560px; line-height: 1.88;
+      margin-bottom: 40px; font-weight: 300;
+      opacity: 0; animation: slideUp 0.9s 0.6s ease forwards;
+    }
+    .hero-bio strong { color: var(--forest); font-weight: 500; }
+    .hero-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 44px;
+      opacity: 0; animation: slideUp 0.9s 0.75s ease forwards;
+    }
+    .tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem; letter-spacing: 0.06em;
+      padding: 5px 12px; border-radius: 6px;
+      border: 1px solid var(--border2);
+      color: var(--ink3); background: var(--card2);
+      transition: all 0.2s; cursor: default;
+    }
+    .tag:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-pale); }
+    .hero-btns {
+      display: flex; flex-wrap: wrap; gap: 14px;
+      opacity: 0; animation: slideUp 0.9s 0.9s ease forwards;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 13px 26px; border-radius: 9px;
+      text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      transition: all 0.25s; letter-spacing: 0.02em;
+    }
+    .btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+    .btn-primary {
+      background: var(--forest); color: var(--ivory);
+      box-shadow: 0 4px 16px rgba(30,64,53,0.25);
+    }
+    .btn-primary:hover { background: var(--teal); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(30,64,53,0.30); }
+    .btn-outline {
+      border: 1.5px solid var(--border2); color: var(--ink3);
+      background: var(--card2); backdrop-filter: blur(8px);
+    }
+    .btn-outline:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-pale); transform: translateY(-2px); }
+
+    /* Profile card (right col of hero) */
+    .profile-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 32px;
+      text-align: center;
+      position: relative; z-index: 1;
+      box-shadow: var(--shadow2);
+      opacity: 0; animation: fadeIn 1.1s 0.6s ease forwards;
+    }
+    .profile-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-lt), var(--amber-lt));
+      border-radius: 24px 24px 0 0;
+    }
+    .avatar-wrap {
+      width: 96px; height: 96px;
+      border-radius: 50%; margin: 0 auto 22px;
+      background: linear-gradient(135deg, var(--forest) 0%, var(--teal-mid) 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem; color: var(--ivory);
+      box-shadow: 0 6px 24px rgba(30,64,53,0.3);
+      position: relative;
+    }
+    .avatar-wrap::after {
+      content: '';
+      position: absolute; inset: -5px;
+      border-radius: 50%;
+      border: 1.5px solid var(--teal-lt);
+      opacity: 0.5;
+    }
+    .card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; font-weight: 500; color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .card-role { font-size: 0.8rem; color: var(--muted); margin-bottom: 28px; line-height: 1.65; }
+    .stats-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; margin-bottom: 24px;
+    }
+    .stat-cell {
+      background: var(--warm-bg); border: 1px solid var(--border);
+      border-radius: 12px; padding: 16px 10px;
+      transition: all 0.2s;
+    }
+    .stat-cell:hover { background: var(--teal-pale); border-color: var(--teal-lt); }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; font-weight: 500;
+      color: var(--teal); display: block; line-height: 1.1; margin-bottom: 4px;
+    }
+    .stat-lbl {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.09em;
+    }
+    .card-links { display: flex; flex-direction: column; gap: 8px; }
+    .card-link {
+      display: flex; align-items: center; gap: 11px;
+      padding: 11px 16px; border-radius: 10px;
+      border: 1px solid var(--border); background: var(--warm-bg);
+      text-decoration: none; color: var(--ink3); font-size: 0.8rem;
+      transition: all 0.2s;
+    }
+    .card-link:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-pale); }
+    .card-link-icon {
+      width: 28px; height: 28px; border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem; flex-shrink: 0;
+    }
+
+    /* ── STATS BAR ── */
+    .stats-strip {
+      background: var(--forest);
+      padding: 48px 0;
+    }
+    .stats-strip .container {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; text-align: center;
+    }
+    .strip-stat { padding: 8px 20px; position: relative; }
+    .strip-stat + .strip-stat::before {
+      content: '';
+      position: absolute; left: 0; top: 20%; height: 60%;
+      width: 1px; background: rgba(255,255,255,0.15);
+    }
+    .strip-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem; font-weight: 400;
+      color: var(--teal-lt); display: block; line-height: 1.1; margin-bottom: 6px;
+    }
+    .strip-label { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-weight: 300; }
+
+    /* ── RESEARCH CARDS ── */
+    .research-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .r-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s; position: relative; overflow: hidden;
+    }
+    .r-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-lt));
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .r-card:hover { transform: translateY(-5px); box-shadow: var(--shadow2); border-color: var(--border2); }
+    .r-card:hover::before { transform: scaleX(1); }
+    .r-num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; color: var(--muted2);
+      letter-spacing: 0.1em; margin-bottom: 16px;
+    }
+    .r-icon { font-size: 1.6rem; margin-bottom: 16px; display: block; }
+    .r-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; font-weight: 500;
+      color: var(--ink); margin-bottom: 12px; line-height: 1.4;
+    }
+    .r-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.75; font-weight: 300; }
+
+    /* ── EXPERIENCE / TIMELINE ── */
+    #experience { background: var(--cream); }
+    .exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+    .timeline { position: relative; }
+    .timeline::before {
+      content: '';
+      position: absolute; left: 0; top: 6px; bottom: 0;
+      width: 1.5px;
+      background: linear-gradient(180deg, var(--teal), transparent);
+    }
+    .tl-item { padding-left: 28px; margin-bottom: 44px; position: relative; }
+    .tl-item::before {
+      content: '';
+      position: absolute; left: -4.5px; top: 6px;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--teal-mid);
+      box-shadow: 0 0 0 3px rgba(61,155,126,0.2);
+    }
+    .tl-period {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem; color: var(--teal);
+      letter-spacing: 0.1em; margin-bottom: 8px;
+    }
+    .tl-role {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 500;
+      color: var(--ink); margin-bottom: 5px;
+    }
+    .tl-org {
+      font-size: 0.82rem; color: var(--teal);
+      font-weight: 400; margin-bottom: 10px;
+    }
+    .tl-desc { font-size: 0.87rem; color: var(--muted); line-height: 1.75; font-weight: 300; }
+
+    /* Skills */
+    .skills-col { display: flex; flex-direction: column; gap: 16px; }
+    .skill-row {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .skill-top {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 10px;
+    }
+    .skill-name { font-size: 0.88rem; color: var(--ink); font-weight: 400; }
+    .skill-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; color: var(--teal);
+      letter-spacing: 0.06em;
+    }
+    .skill-track {
+      height: 4px; background: var(--cream);
+      border-radius: 3px; overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%; border-radius: 3px; width: 0;
+      background: linear-gradient(90deg, var(--teal), var(--teal-lt));
+      transition: width 1.4s cubic-bezier(.25,.8,.25,1);
+    }
+
+    /* ── PUBLICATIONS ── */
+    .pub-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+    .pf-btn {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem; letter-spacing: 0.08em;
+      padding: 7px 16px; border-radius: 6px;
+      border: 1px solid var(--border2);
+      background: var(--card); color: var(--muted);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .pf-btn.active, .pf-btn:hover {
+      background: var(--forest); color: var(--ivory); border-color: var(--forest);
+    }
+    .pub-list { display: flex; flex-direction: column; gap: 16px; }
+    .pub-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      display: grid; grid-template-columns: 80px 1fr;
+      box-shadow: var(--shadow); transition: all 0.25s;
+    }
+    .pub-card:hover { border-color: var(--border2); box-shadow: var(--shadow2); }
+    .pub-year-col {
+      background: var(--forest); color: var(--teal-lt);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; letter-spacing: 0.08em;
+      writing-mode: vertical-rl; text-orientation: mixed;
+      padding: 24px 0;
+    }
+    .pub-body { padding: 24px 28px; }
+    .pub-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; font-weight: 500; color: var(--ink);
+      margin-bottom: 8px; line-height: 1.5;
+    }
+    .pub-meta {
+      font-size: 0.82rem; color: var(--muted); margin-bottom: 14px; font-weight: 300; line-height: 1.6;
+    }
+    .pub-journal { font-style: italic; color: var(--teal); }
+    .pub-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .pub-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .pub-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.64rem; color: var(--teal);
+      border: 1px solid rgba(61,155,126,0.3);
+      background: var(--teal-pale);
+      border-radius: 4px; padding: 3px 9px; letter-spacing: 0.04em;
+    }
+    .pub-doi {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem; color: var(--amber);
+      text-decoration: none; transition: color 0.2s;
+      display: inline-flex; align-items: center; gap: 4px;
+      white-space: nowrap;
+    }
+    .pub-doi:hover { color: var(--amber-lt); }
+
+    /* ── PROFILES ── */
+    #profiles { background: var(--cream); }
+    .profiles-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+    .p-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px 24px;
+      text-decoration: none; color: var(--ink);
+      box-shadow: var(--shadow);
+      display: flex; flex-direction: column; gap: 16px;
+      transition: all 0.3s; position: relative; overflow: hidden;
+    }
+    .p-card::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 2.5px;
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .p-card:nth-child(1)::after { background: #4285f4; }
+    .p-card:nth-child(2)::after { background: #a6ce39; }
+    .p-card:nth-child(3)::after { background: #00cc88; }
+    .p-card:nth-child(4)::after { background: #0077b5; }
+    .p-card:hover { transform: translateY(-6px); box-shadow: var(--shadow2); border-color: var(--border2); }
+    .p-card:hover::after { transform: scaleX(1); }
+    .p-icon {
+      width: 50px; height: 50px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+    .p-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; font-weight: 500; color: var(--ink); margin-bottom: 4px;
+    }
+    .p-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.65; font-weight: 300; }
+    .p-arrow { margin-top: auto; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--teal); }
+
+    /* ── CONTACT ── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .c-box {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 20px; padding: 44px;
+      box-shadow: var(--shadow); position: relative; overflow: hidden;
+    }
+    .c-box::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-lt));
+    }
+    .c-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem; font-weight: 400; color: var(--ink); margin-bottom: 12px;
+    }
+    .c-sub { font-size: 0.9rem; color: var(--muted); margin-bottom: 28px; line-height: 1.8; font-weight: 300; }
+    .email-btn {
+      display: flex; align-items: center; gap: 10px;
+      padding: 14px 20px; border-radius: 10px;
+      border: 1.5px solid rgba(61,155,126,0.3);
+      background: var(--teal-pale); color: var(--forest);
+      font-family: 'DM Mono', monospace; font-size: 0.8rem;
+      text-decoration: none; margin-bottom: 20px;
+      transition: all 0.25s; font-weight: 500;
+    }
+    .email-btn:hover { background: var(--forest); color: var(--ivory); border-color: var(--forest); }
+    .c-detail { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+    .c-icon { font-size: 0.95rem; margin-top: 2px; flex-shrink: 0; }
+    .c-text { font-size: 0.85rem; color: var(--muted); font-weight: 300; line-height: 1.6; }
+
+    /* Form */
+    .form-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 400; color: var(--ink); margin-bottom: 24px;
+    }
+    .f-group { margin-bottom: 18px; }
+    .f-label {
+      display: block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 7px;
+    }
+    .f-input, .f-textarea {
+      width: 100%; background: var(--warm-bg);
+      border: 1px solid var(--border2); border-radius: 8px;
+      padding: 12px 15px; color: var(--ink);
+      font-family: 'DM Sans', sans-serif; font-size: 0.88rem;
+      outline: none; resize: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .f-input:focus, .f-textarea:focus {
+      border-color: var(--teal); background: var(--card);
+    }
+    .f-textarea { height: 110px; }
+    .f-submit {
+      width: 100%; background: var(--forest); color: var(--ivory);
+      border: none; border-radius: 9px; padding: 14px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.88rem; font-weight: 500;
+      cursor: pointer; transition: all 0.25s;
+    }
+    .f-submit:hover { background: var(--teal); box-shadow: 0 6px 22px rgba(61,155,126,0.35); transform: translateY(-1px); }
+    .f-note { font-size: 0.72rem; color: var(--muted); margin-top: 10px; text-align: center; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink2);
+      padding: 36px 0;
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .footer-left { color: rgba(255,255,255,0.5); font-size: 0.8rem; }
+    .footer-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem; color: rgba(255,255,255,0.85); margin-bottom: 4px;
+    }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      color: rgba(255,255,255,0.45); text-decoration: none;
+      font-size: 0.78rem; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--teal-lt); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+
+    /* ── BACK TO TOP ── */
+    #btt {
+      position: fixed; bottom: 28px; right: 28px;
+      width: 46px; height: 46px;
+      background: var(--forest); color: var(--ivory);
+      border: none; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; cursor: pointer; z-index: 100;
+      opacity: 0; pointer-events: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 16px rgba(30,64,53,0.35);
+    }
+    #btt.visible { opacity: 1; pointer-events: all; }
+    #btt:hover { background: var(--teal); transform: translateY(-2px); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .research-grid { grid-template-columns: repeat(2, 1fr); }
+      .profiles-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero::before { display: none; }
+      .profile-card { display: none; }
+      .exp-grid { grid-template-columns: 1fr; gap: 40px; }
+      .stats-strip .container { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .research-grid { grid-template-columns: 1fr; }
+      .profiles-grid { grid-template-columns: 1fr; }
+      .pub-card { grid-template-columns: 60px 1fr; }
+      .pub-year-col { font-size: 0.62rem; }
+      section { padding: 64px 0; }
+      .container { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-bar"></div>
+
+<!-- Back to Top -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mob-nav">
+  <a href="#home" onclick="closeMob()">Home</a>
+  <a href="#research" onclick="closeMob()">Research</a>
+  <a href="#experience" onclick="closeMob()">Experience</a>
+  <a href="#publications" onclick="closeMob()">Publications</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#home">Dr. <span>NK Chaitanya</span></a>
+    <ul class="nav-links">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#profiles">Profiles</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-tog" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section id="home">
+  <div class="container hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Post-Doctoral Researcher · IIT Hyderabad</p>
+      <h1 class="hero-name">
+        Narnepati<br/><em>Krishna Chaitanya</em>
+      </h1>
+      <p class="hero-subtitle">Ph.D. · Civil & Environmental Engineering · Bioelectrochemical Systems</p>
+      <p class="hero-bio">
+        Advancing the frontier of <strong>microbial electrosynthesis (MES)</strong> to transform CO₂ into valuable biochemicals — from <strong>acetate</strong> and acetic acid to <strong>medium chain fatty acids</strong>. Research that bridges biology, electrochemistry, and sustainable engineering.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Microbial Electrosynthesis</span>
+        <span class="tag">CO₂ Reduction</span>
+        <span class="tag">Acetate Production</span>
+        <span class="tag">MCFA · VFA</span>
+        <span class="tag">Bioelectrochemical Systems</span>
+        <span class="tag">Carbon Capture</span>
+        <span class="tag">Caproic Acid</span>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="https://scholar.google.com/citations?user=6HndMUUAAAAJ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h4.5v9H10v-5.5h4V18.5h5.5v-9H24L12 0z"/></svg>
+          Google Scholar
+        </a>
+        <a class="btn btn-outline" href="https://orcid.org/0000-0001-5916-9327" target="_blank" rel="noopener">ORCID Profile</a>
+        <a class="btn btn-outline" href="#publications">View Publications</a>
+      </div>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="avatar-wrap">NK</div>
+      <div class="card-name">Dr. Narnepati Krishna Chaitanya</div>
+      <div class="card-role">Post-Doctoral Researcher<br/>Dept. of Civil Engineering · IIT Hyderabad</div>
+      <div class="stats-grid">
+        <div class="stat-cell">
+          <span class="stat-num" data-count="17">0</span>
+          <span class="stat-lbl">Citations</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="8">0</span>
+          <span class="stat-lbl">Papers</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-lbl">Years</span>
+        </div>
+        <div class="stat-cell">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-lbl">h-Index</span>
+        </div>
+      </div>
+      <div class="card-links">
+        <a class="card-link" href="https://scholar.google.com/citations?user=6HndMUUAAAAJ" target="_blank">
+          <span class="card-link-icon" style="background:rgba(66,133,244,0.12);">🎓</span>
+          Google Scholar
+        </a>
+        <a class="card-link" href="https://orcid.org/0000-0001-5916-9327" target="_blank">
+          <span class="card-link-icon" style="background:rgba(166,206,57,0.12);">🔬</span>
+          ORCID · 0000-0001-5916-9327
+        </a>
+        <a class="card-link" href="https://www.researchgate.net/profile/Narnepati-Krishna-Chaitanya" target="_blank">
+          <span class="card-link-icon" style="background:rgba(0,204,136,0.12);">📄</span>
+          ResearchGate
+        </a>
+        <a class="card-link" href="https://www.linkedin.com/in/dr-narnepati-krishna-chaitanya-1b4221203" target="_blank">
+          <span class="card-link-icon" style="background:rgba(0,119,181,0.12);">💼</span>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ STATS STRIP ═══════════════════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="strip-stat reveal">
+      <span class="strip-num" data-count="17">17+</span>
+      <span class="strip-label">Total Citations</span>
+    </div>
+    <div class="strip-stat reveal delay-1">
+      <span class="strip-num" data-count="8">8+</span>
+      <span class="strip-label">Published Papers</span>
+    </div>
+    <div class="strip-stat reveal delay-2">
+      <span class="strip-num" data-count="6">6+</span>
+      <span class="strip-label">Journal Articles</span>
+    </div>
+    <div class="strip-stat reveal delay-3">
+      <span class="strip-num" data-count="5">5+</span>
+      <span class="strip-label">Years of Research</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ RESEARCH ═══════════════════════ -->
+<section id="research">
+  <div class="container">
+    <span class="section-tag reveal">Areas of Expertise</span>
+    <h2 class="section-title reveal">Research <em>Focus</em></h2>
+    <div class="section-rule reveal"></div>
+    <p class="section-desc reveal">Engineering the intersection of microbiology, electrochemistry, and sustainability — converting CO₂ into high-value biochemicals through novel bioelectrochemical systems.</p>
+    <div class="research-grid">
+      <div class="r-card reveal delay-1">
+        <span class="r-num">01 / CORE</span>
+        <span class="r-icon">⚡</span>
+        <h3>Microbial Electrosynthesis (MES)</h3>
+        <p>Developing bioelectrochemical cells that harness electrolithoautotrophic microorganisms to fix CO₂ into volatile fatty acids using renewable electricity as the energy driver.</p>
+      </div>
+      <div class="r-card reveal delay-2">
+        <span class="r-num">02 / CORE</span>
+        <span class="r-icon">🌿</span>
+        <h3>CO₂ Reduction & Conversion</h3>
+        <p>Investigating electrochemical and biological pathways for transforming CO₂ into acetate, acetic acid, caproic acid, butyric acid, and medium chain fatty acids.</p>
+      </div>
+      <div class="r-card reveal delay-3">
+        <span class="r-num">03 / APPLIED</span>
+        <span class="r-icon">🧪</span>
+        <h3>Acetate & Acetic Acid Production</h3>
+        <p>Optimizing MES reactor design, electrode materials, and microbial community enrichment to maximize acetate yields from CO₂ reduction at the cathode interface.</p>
+      </div>
+      <div class="r-card reveal delay-1">
+        <span class="r-num">04 / APPLIED</span>
+        <span class="r-icon">🔗</span>
+        <h3>Medium Chain Fatty Acids (MCFA)</h3>
+        <p>Producing MCFA (caproic acid C6, caprylic acid C8) from CO₂ via chain elongation in integrated dark fermentation–MES reactors with <em>Clostridium kluyveri</em>.</p>
+      </div>
+      <div class="r-card reveal delay-2">
+        <span class="r-num">05 / SYSTEMS</span>
+        <span class="r-icon">💧</span>
+        <h3>Wastewater Treatment & Recovery</h3>
+        <p>Integrating bioelectrochemical systems with wastewater treatment for emerging contaminant removal and circular resource recovery from waste streams.</p>
+      </div>
+      <div class="r-card reveal delay-3">
+        <span class="r-num">06 / METHODS</span>
+        <span class="r-icon">📊</span>
+        <h3>Process Optimization (RSM)</h3>
+        <p>Applying Response Surface Methodology and central composite design to optimize MES parameters including pH, applied voltage, headspace pressure, and electrolyte composition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <span class="section-tag reveal">Career Path</span>
+    <h2 class="section-title reveal">Academic <em>Journey</em></h2>
+    <div class="section-rule reveal"></div>
+    <div class="exp-grid">
+      <!-- Timeline -->
+      <div>
+        <p style="font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.15em; color:var(--teal); text-transform:uppercase; margin-bottom:32px;" class="reveal">Experience</p>
+        <div class="timeline reveal">
+          <div class="tl-item">
+            <div class="tl-period">2023 – Present</div>
+            <div class="tl-role">Post-Doctoral Researcher</div>
+            <div class="tl-org">Indian Institute of Technology Hyderabad · Dept. of Civil Engineering</div>
+            <div class="tl-desc">Advanced research in microbial electrosynthesis and CO₂ conversion to medium chain fatty acids. Integrating bioelectrochemical systems with wastewater treatment technologies for sustainable resource recovery.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-period">2018 – 2023</div>
+            <div class="tl-role">Ph.D. Research Scholar</div>
+            <div class="tl-org">Indian Institute of Technology Hyderabad · Environmental Engineering</div>
+            <div class="tl-desc">Doctoral research on microbial electrosynthesis for CO₂ reduction to acetate and volatile fatty acids. Developed novel MES reactor configurations and explored advanced electrode materials.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-period">Prior</div>
+            <div class="tl-role">M.Tech. · Environmental Engineering</div>
+            <div class="tl-org">Indian Institute of Technology Hyderabad</div>
+            <div class="tl-desc">Postgraduate specialization in environmental engineering with focus on bioelectrochemical treatment systems and sustainable water technologies.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills -->
+      <div>
+        <p style="font-family:'DM Mono',monospace; font-size:0.68rem; letter-spacing:0.15em; color:var(--teal); text-transform:uppercase; margin-bottom:32px;" class="reveal">Key Skills & Techniques</p>
+        <div class="skills-col reveal" id="skills-section">
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name">Microbial Electrosynthesis</span>
+              <span class="skill-badge">Expert</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="95"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name">Bioelectrochemical Systems</span>
+              <span class="skill-badge">Expert</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="92"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name">CO₂ Conversion Research</span>
+              <span class="skill-badge">Expert</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="93"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name">Wastewater Treatment</span>
+              <span class="skill-badge">Advanced</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top">
+              <span class="skill-name">Response Surface Methodology</span>
+              <span class="skill-badge">Advanced</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PUBLICATIONS ═══════════════════════ -->
+<section id="publications">
+  <div class="container">
+    <span class="section-tag reveal">Peer-Reviewed Research</span>
+    <h2 class="section-title reveal">Selected <em>Publications</em></h2>
+    <div class="section-rule reveal"></div>
+    <div class="pub-filters reveal">
+      <button class="pf-btn active" data-f="all">All</button>
+      <button class="pf-btn" data-f="2025">2025</button>
+      <button class="pf-btn" data-f="2024">2024</button>
+      <button class="pf-btn" data-f="2023">2023</button>
+      <button class="pf-btn" data-f="earlier">Earlier</button>
+    </div>
+    <div class="pub-list">
+
+      <div class="pub-card reveal" data-y="2025">
+        <div class="pub-year-col">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Enhanced Carbon Capture and Medium Chain Fatty Acid Production Using Microbial Electrosynthesis: Role of Electrode Surface Area</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya, Akanksha Rajpurohit, Pavithra S. Nair, Pritha Chatterjee · <span class="pub-journal">Bioresource Technology, 435, 132916</span></div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">MES</span><span class="pub-tag">CO₂ conversion</span><span class="pub-tag">MCFA</span><span class="pub-tag">carbon capture</span>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.biortech.2025.132916" target="_blank">↗ 10.1016/j.biortech.2025.132916</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card reveal" data-y="2025">
+        <div class="pub-year-col">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Medium Chain Fatty Acid Production from CO₂ in Integrated Dark Fermentation–Microbial Electrosynthesis Reactor</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya, Pritha Chatterjee · <span class="pub-journal">Bioresource Technology, 426, 132371</span></div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">MCFA</span><span class="pub-tag">CO₂ reduction</span><span class="pub-tag">dark fermentation</span><span class="pub-tag">MES</span>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.biortech.2025.132371" target="_blank">↗ 10.1016/j.biortech.2025.132371</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card reveal" data-y="2024">
+        <div class="pub-year-col">2024</div>
+        <div class="pub-body">
+          <div class="pub-title">Impact of Cell Voltage on Synthesis of Caproic Acid from Carbon Dioxide and Ethanol in Direct Current Powered Microbial Electrosynthesis Cell</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya, Pavithra S. Nair, Akanksha Rajpurohit, Pritha Chatterjee · <span class="pub-journal">Bioresource Technology, 412, 131383</span></div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">caproic acid</span><span class="pub-tag">CO₂ reduction</span><span class="pub-tag">MES</span><span class="pub-tag">cell voltage</span>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/j.biortech.2024.131383" target="_blank">↗ 10.1016/j.biortech.2024.131383</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card reveal" data-y="2023">
+        <div class="pub-year-col">2023</div>
+        <div class="pub-body">
+          <div class="pub-title">Optimization of Microbial Electrosynthesis Parameters for Enhanced CO₂ Reduction to Acetate</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya, Pritha Chatterjee · <span class="pub-journal">Journal of Hazardous, Toxic and Radioactive Waste (ASCE)</span></div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">acetate</span><span class="pub-tag">CO₂ reduction</span><span class="pub-tag">MES optimization</span>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1061/JHTRBP.HZENG-1229" target="_blank">↗ 10.1061/JHTRBP.HZENG-1229</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card reveal" data-y="earlier">
+        <div class="pub-year-col">2021</div>
+        <div class="pub-body">
+          <div class="pub-title">Microbial Electrosynthesis: Recovery of High-Value Volatile Fatty Acids from CO₂</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya, Akash Tripathi, Pritha Chatterjee · <span class="pub-journal">Book Chapter — Delivering Low-Carbon Biofuels with Bioproduct Recovery (Elsevier), pp. 123–142</span></div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">VFA</span><span class="pub-tag">CO₂ fixation</span><span class="pub-tag">acetate</span><span class="pub-tag">book chapter</span>
+            </div>
+            <a class="pub-doi" href="https://doi.org/10.1016/B978-0-12-821841-9.00006-2" target="_blank">↗ 10.1016/B978-0-12-821841-9.00006-2</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card reveal" data-y="2025">
+        <div class="pub-year-col">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Revolutionizing Waste into Resources: Bioprocesses for CO₂ Conversion, Wastewater Treatment, Emerging Contaminant Removal, and Resource Recovery</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya et al.</div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">CO₂ conversion</span><span class="pub-tag">wastewater</span><span class="pub-tag">resource recovery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-card reveal" data-y="2025">
+        <div class="pub-year-col">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Performance Comparison and Integration of Bioelectrochemical Systems with Other Wastewater Treatment Technologies</div>
+          <div class="pub-meta">Narnepati Krishna Chaitanya et al. · <span class="pub-journal">Bioelectrochemical Systems</span></div>
+          <div class="pub-footer">
+            <div class="pub-tags">
+              <span class="pub-tag">BES</span><span class="pub-tag">MES integration</span><span class="pub-tag">wastewater treatment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ PROFILES ═══════════════════════ -->
+<section id="profiles">
+  <div class="container">
+    <span class="section-tag reveal">Find Me Online</span>
+    <h2 class="section-title reveal">Academic <em>Profiles</em></h2>
+    <div class="section-rule reveal"></div>
+    <div class="profiles-grid">
+      <a class="p-card reveal delay-1" href="https://scholar.google.com/citations?user=6HndMUUAAAAJ" target="_blank" rel="noopener">
+        <div class="p-icon" style="background:rgba(66,133,244,0.12);">🎓</div>
+        <div>
+          <h3>Google Scholar</h3>
+          <p>Full publication list, citation count, and h-index tracking for all peer-reviewed work.</p>
+        </div>
+        <div class="p-arrow">Open profile ↗</div>
+      </a>
+      <a class="p-card reveal delay-2" href="https://orcid.org/0000-0001-5916-9327" target="_blank" rel="noopener">
+        <div class="p-icon" style="background:rgba(166,206,57,0.12);">🔬</div>
+        <div>
+          <h3>ORCID</h3>
+          <p>Verified researcher ID: 0000-0001-5916-9327 — a persistent identifier linking all publications.</p>
+        </div>
+        <div class="p-arrow">Open profile ↗</div>
+      </a>
+      <a class="p-card reveal delay-3" href="https://www.researchgate.net/profile/Narnepati-Krishna-Chaitanya" target="_blank" rel="noopener">
+        <div class="p-icon" style="background:rgba(0,204,136,0.12);">📄</div>
+        <div>
+          <h3>ResearchGate</h3>
+          <p>Full-text papers, preprints, and engagement with the global MES research community.</p>
+        </div>
+        <div class="p-arrow">Open profile ↗</div>
+      </a>
+      <a class="p-card reveal delay-4" href="https://www.linkedin.com/in/dr-narnepati-krishna-chaitanya-1b4221203" target="_blank" rel="noopener">
+        <div class="p-icon" style="background:rgba(0,119,181,0.12);">💼</div>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>Professional profile, research updates, and connections from IIT Hyderabad and beyond.</p>
+        </div>
+        <div class="p-arrow">Open profile ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <span class="section-tag reveal">Collaboration</span>
+    <h2 class="section-title reveal">Get in <em>Touch</em></h2>
+    <div class="section-rule reveal"></div>
+    <div class="contact-grid">
+      <div class="c-box reveal">
+        <div class="c-title">Open to Collaboration</div>
+        <p class="c-sub">Available for research collaborations in microbial electrosynthesis, CO₂ conversion, and bioelectrochemical systems — including joint grant proposals, consulting, and academic networking.</p>
+        <a class="email-btn" href="mailto:nkchaitanya1994@gmail.com">
+          ✉ &nbsp;nkchaitanya1994@gmail.com
+        </a>
+        <div class="c-detail">
+          <span class="c-icon">📍</span>
+          <span class="c-text">Department of Civil Engineering, IIT Hyderabad<br/>Kandi, Sangareddy, Telangana 502285, India</span>
+        </div>
+        <div class="c-detail">
+          <span class="c-icon">🔬</span>
+          <span class="c-text">Bioelectrochemical Systems Lab, IIT Hyderabad</span>
+        </div>
+        <div class="c-detail">
+          <span class="c-icon">🌐</span>
+          <span class="c-text">narnepati-krishna-chaitanya.github.io</span>
+        </div>
+      </div>
+      <div class="c-box reveal">
+        <div class="form-title">Send a Message</div>
+        <div class="f-group">
+          <label class="f-label">Your Name</label>
+          <input class="f-input" type="text" placeholder="Dr. Jane Smith" id="f-name"/>
+        </div>
+        <div class="f-group">
+          <label class="f-label">Email Address</label>
+          <input class="f-input" type="email" placeholder="jane@university.edu" id="f-email"/>
+        </div>
+        <div class="f-group">
+          <label class="f-label">Subject</label>
+          <input class="f-input" type="text" placeholder="Research Collaboration Inquiry" id="f-subj"/>
+        </div>
+        <div class="f-group">
+          <label class="f-label">Message</label>
+          <textarea class="f-textarea" placeholder="I'd like to discuss a collaboration opportunity..." id="f-msg"></textarea>
+        </div>
+        <button class="f-submit" onclick="sendForm()">Send Message →</button>
+        <p class="f-note" id="f-note">This will open your email client with the message pre-filled.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="footer-name">Dr. Narnepati Krishna Chaitanya</div>
+      <div>© 2025 · Post-Doctoral Researcher · IIT Hyderabad</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=6HndMUUAAAAJ" target="_blank">Scholar</a>
+      <a href="https://orcid.org/0000-0001-5916-9327" target="_blank">ORCID</a>
+      <a href="https://www.researchgate.net/profile/Narnepati-Krishna-Chaitanya" target="_blank">ResearchGate</a>
+      <a href="https://www.linkedin.com/in/dr-narnepati-krishna-chaitanya-1b4221203" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ── Nav scroll ── */
+const nav = document.getElementById('main-nav');
+const btt = document.getElementById('btt');
+const bar = document.getElementById('scroll-bar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+  btt.classList.toggle('visible', window.scrollY > 400);
+  const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+  bar.style.width = pct + '%';
+});
+
+/* ── Mobile nav ── */
+const tog = document.getElementById('nav-tog');
+const mob = document.getElementById('mob-nav');
+tog.addEventListener('click', () => { tog.classList.toggle('open'); mob.classList.toggle('open'); });
+function closeMob() { tog.classList.remove('open'); mob.classList.remove('open'); }
+
+/* ── Scroll reveal ── */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+/* ── Skill bars ── */
+const so = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-fill').forEach(b => {
+        b.style.width = b.dataset.w + '%';
+      });
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('#skills-section').forEach(el => so.observe(el));
+
+/* ── Counter animation ── */
+const co = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('[data-count]').forEach(el => {
+        const target = +el.dataset.count;
+        let cur = 0; const step = target / 40;
+        const t = setInterval(() => {
+          cur = Math.min(cur + step, target);
+          el.textContent = Math.floor(cur) + '+';
+          if (cur >= target) clearInterval(t);
+        }, 35);
+      });
+      co.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.profile-card, .stats-strip').forEach(el => co.observe(el));
+
+/* ── Pub filter ── */
+document.querySelectorAll('.pf-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.pf-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.f;
+    document.querySelectorAll('.pub-card').forEach(c => {
+      c.style.display = (f === 'all' || c.dataset.y === f) ? 'grid' : 'none';
+    });
+  });
+});
+
+/* ── Contact form ── */
+function sendForm() {
+  const name = document.getElementById('f-name').value;
+  const email = document.getElementById('f-email').value;
+  const subj = document.getElementById('f-subj').value || 'Research Collaboration Inquiry';
+  const msg = document.getElementById('f-msg').value;
+  const note = document.getElementById('f-note');
+  if (!email || !msg) {
+    note.textContent = '⚠ Please fill in your email and message.';
+    note.style.color = 'var(--amber)';
+    return;
+  }
+  const body = (name ? 'From: ' + name + '\n\n' : '') + msg;
+  const mailto = 'mailto:nkchaitanya1994@gmail.com'
+    + '?subject=' + encodeURIComponent(subj)
+    + '&body=' + encodeURIComponent(body);
+  window.location.href = mailto;
+  note.textContent = '✓ Opening your email client…';
+  note.style.color = 'var(--teal)';
+}
+</script>
+</body>
+</html>
